@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block class="Test\Advice\Block\Advice" name="product.info.advice"
+                   after="product.info.addtocart"
+                   template="Test_Advice::catalog/product/view/advice.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

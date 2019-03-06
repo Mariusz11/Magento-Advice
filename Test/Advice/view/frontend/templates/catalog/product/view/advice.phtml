@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @var $block \Test\Advice\Block\Advice
+ */
+ ?>
+
+<h4><?= $block->getAdviceHeaderText(); ?></h4>
+
+<?php foreach ($block->getAdvices() as $advice): ?>
+    <p><?= $block->escapeHtml($advice); ?></p>
+<?php endforeach; ?>
